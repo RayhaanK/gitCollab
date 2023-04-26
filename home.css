@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", cursive;
+}
+/* displays spaces between words and makes them centered */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #bd8d68;
+}
+/* changes size of logo and adjusts it to the margin */
+.logo {
+  width: 10rem;
+  margin: 10px 30px 10px 20px;
+}
+
+/* clears the decoration for the links as well as change colour */
+.nav-links {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+  padding: 16px;
+  color: black;
+}
+.headlink:hover {
+  color: #ffe6c7;
+  border: 3px solid #ffe6c7;
+}
+.headlink {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 30px;
+  padding: 35px;
+  margin: 0 40px 0 0;
+  color: black;
+}
+html {
+  background: url(/images/homeback.webp) no-repeat center fixed;
+  background-size: cover;
+}
+h1,
+h2,
+button {
+  color: #000000;
+  text-shadow: 2px 3px 4px #f8dab5;
+}
+.contact {
+  text-align: center;
+  font-size: 30px;
+}
+/* input styling */
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #0a0a0a;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: horizontal;
+}
+
+button[type="submit"] {
+  background-color: #ffe6c7;
+  color: rgb(6, 6, 6);
+  padding: 15px 80px;
+  border: black;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #ffe6c79f;
+}
+
+/* Style the container/contact section */
+.container {
+  background-color: #bd8d68;
+  padding: 50px;
+  margin: 90px;
+  opacity: 95%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.icons {
+  text-align: center;
+  padding-bottom: 30px;
+}
+/* social media icons*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #f8dab5;
+  color: black;
+}
+
+.fa-twitter {
+  background: #f8dab5;
+  color: black;
+}
+
+.fa-youtube {
+  background: #f8dab5;
+  color: black;
+}
+
+.fa-instagram {
+  background: #f8dab5;
+  color: black;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #bd8d68;
+  color: black;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
